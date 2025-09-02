@@ -29,7 +29,7 @@ public class UserController {
         userService.UserUpdate(user);
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable long id){
         userService.UserDelete(id);
     }
